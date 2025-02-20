@@ -1,0 +1,78 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#nl{
+    background-color:rgb(80, 255, 141);
+    overflow: hidden;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul li{
+    display: inline;
+    padding: 10px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    color: red;
+}
+h1{
+    text-align: center;
+    color: blue;
+}
+h2{
+    text-align: center;
+    background-color: rgb(0, 255, 89);
+}
+h3{
+    text-decoration:underline;
+}
+section{
+    padding: 20px;
+}
+#section-benefits, #section-exercise{
+    background-color: bisque;
+}
+section img{
+    width: 30%;
+    height: auto;
+}
+#physical-health img{
+    float:inline-end;
+}
+
+#health{
+    float: inline-end;
+}
+#m1{
+    float:left;
+}
+
+#m2{
+    float: inline-end;
+}
+#m3{
+    float: inline-end;
+}
+.column{
+    float:left;
+    width: 100%;
+    padding: 5px;
+}
+.row:after{
+    content: "";
+    clear:both;
+    display: table;
+}
+

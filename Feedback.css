@@ -1,0 +1,101 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 10px;
+    background-color: #688142;
+    color: white;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.feedback-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form h1 {
+    text-align: center;
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.feedback-form input,
+.feedback-form textarea,
+.feedback-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feedback-form input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.feedback-form .rating label {
+    margin-right: 10px;
+}
+
+.feedback-form button {
+    background-color: #688142;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.feedback-form button:hover {
+    background-color: #575757;
+}
+
+#previewSection {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#previewSection h2 {
+    text-align: center;
+}
+
+#previewSection p {
+    margin-bottom: 10px;
+}
+
+#previewSection button {
+    background-color: #688142;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#previewSection button:hover {
+    background-color: #575757;
+}

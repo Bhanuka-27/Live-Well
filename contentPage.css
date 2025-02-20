@@ -1,0 +1,98 @@
+body{
+    font-family: Arial, sans-serif; /* Sets the font for the entire document */
+}
+
+h2{
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.right{
+    color: aliceblue;
+}
+
+.life{
+    background-color: #478d55;
+    padding: 7px;
+}
+
+.main p{
+    color: white;
+    text-align: center;
+}
+
+.main a{
+    color: white;
+}
+
+.introduction,.physical,.mental,.social {
+    background-color: #81c28c;
+    text-align: center;
+    padding: 2px;
+}
+
+.left_content h3{
+    text-align: center;
+    color: white;
+}
+
+.left_content{
+    background-color: #478d55;
+    padding: 5px;
+    display: flex;
+}
+
+.left_content p{
+    color: white;
+}
+
+.physical_img{
+    width: 400px;
+    height: 300px;
+    padding-right:20px ;
+}
+
+.mental_img{
+    width: 400px;
+    height: 300px;
+    padding-left:20px ;
+}
+
+.social_img{
+    width: 400px;
+    height: 300px;
+    padding-right:20px ;
+}
+
+.para{
+    display: block;
+    text-align: center;
+}
+
+.right_content{
+    background-color: white;
+    display: flex;
+    padding: 0 50px;
+}
+
+.top {
+    text-align: center;
+}
+
+.top a{
+    background-color: #1d5a1c;
+    color: white;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.page_editor{
+    text-align: center;
+    background-color: #81c28c;
+    padding: 8px;
+}
+
+.page_editor a{
+    color: white;
+}

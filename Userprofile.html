@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Setup</title>
+    <!-- Link to external CSS files -->
+    <link rel="stylesheet" href="Userprofile.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header section with logo, topic, and navigation menu -->
+    <header>
+        <div class="logo">
+            <img src="GoodHealth.png" alt="Website Logo">
+        </div>
+        <div class="topic">
+            <h1>Live Well</h1>
+        </div>
+        <nav>
+            <ul class="nav-bar">
+                <li class="nav-item"><a href="home.html">Home</a></li>
+                <li class="nav-item active"><a href="Userprofile.html">User Profile</a></li>
+                <li class="nav-item"><a href="team.html">About Us</a></li>
+                <li class="nav-item"><a href="shop.html">Shop</a></li>
+                <li class="nav-item"><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main container for the profile setup form -->
+    <div id="container">
+        <h2 style="text-align: center;">Let us know about you.....</h2>
+
+        <!-- Progress bar section -->
+        <div id="progress-bar">
+            <div id="progress">0%</div>
+        </div>
+
+        <!-- Prompt container for multi-step form -->
+        <div id="prompt-container">
+            
+            <!-- Step 1: Personal details -->
+            <div id="step1" class="step active">
+                <h3>STEP 1: Personal details</h3>
+                <div class="prompt-item">
+                    <label>Your Name</label>
+                    <input type="text" id="name" placeholder="Enter Your Name" required>
+                </div>
+                <div class="prompt-item">
+                    <label>Your Surname</label>
+                    <input type="text" id="surname" placeholder="Enter Your Surname">
+                </div>
+                <div class="prompt-item">
+                    <label>Your Age</label>
+                    <input type="number" id="age" required>
+                </div>
+                <div class="prompt-item">
+                    <label>Gender</label>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </div>
+                <div class="prompt-item">
+                    <label>Agree with privacy terms?</label>
+                    <input type="checkbox" id="privacy" required>
+                </div>
+                <button onclick="nextStep(1)">Next</button>
+                <button class="skip" onclick="skipStep(1)">Skip</button>
+            </div>
+            
+            <!-- Step 2: Health Preferences and Lifestyle -->
+            <div id="step2" class="step">
+                <h3>STEP 2: Health Preferences and Lifestyle</h3>
+                <div class="prompt-item">
+                    <label>Dietary Preferences</label>
+                    <input type="text" id="dietary">
+                </div>
+                <div class="prompt-item">
+                    <label>Exercise routine (times per week)</label>
+                    <input type="text" id="exercise">
+                </div>
+                <div class="prompt-item">
+                    <label>Sleep habits (hours per night)</label>
+                    <input type="text" id="sleep">
+                </div>
+                <div class="prompt-item">
+                    <label>Stress management techniques</label>
+                    <input type="text" id="stress">
+                </div>
+                <div class="prompt-item">
+                    <label>Health goals</label>
+                    <input type="text" id="healthgoals">
+                </div>
+                <button onclick="nextStep(2)">Next</button>
+                <button class="skip" onclick="skipStep(2)">Skip</button>
+            </div>
+            
+            <!-- Step 3: Medical and Health Information -->
+            <div id="step3" class="step">
+                <h3>STEP 3: Medical and Health Information</h3>
+                <div class="prompt-item">
+                    <label>Medical conditions</label>
+                    <input type="text" id="conditions">
+                </div>
+                <div class="prompt-item">
+                    <label>Medications</label>
+                    <input type="text" id="medications">
+                </div>
+                <div class="prompt-item">
+                    <label>Allergies</label>
+                    <input type="text" id="allergies">
+                </div>
+                <div class="prompt-item">
+                    <label>Last medical check-up</label>
+                    <input type="number" id="checkup">
+                </div>
+                <div class="prompt-item">
+                    <label>Health insurance provider</label>
+                    <input type="text" id="insurance">
+                </div>
+                <button onclick="nextStep(3)">Next</button>
+                <button class="skip" onclick="skipStep(3)">Skip</button>
+            </div>
+            
+            <!-- Step 4: Additional Information -->
+            <div id="step4" class="step">
+                <h3>STEP 4: Additional Information</h3>
+                <div class="prompt-item">
+                    <label>Hobbies and interests</label>
+                    <input type="text" id="hobbies">
+                </div>
+                <div class="prompt-item">
+                    <label>Volunteer activities</label>
+                    <input type="text" id="volunteer">
+                </div>
+                <div class="prompt-item">
+                    <label>Community involvement</label>
+                    <input type="text" id="community">
+                </div>
+                <div class="prompt-item">
+                    <label>Phone Number</label>
+                    <input type="text" id="phone">
+                </div>
+                <div class="prompt-item">
+                    <label>Email address</label>
+                    <input type="email" id="email">
+                </div>
+                <button type="button" onclick="confirmProfile()" class="button">Submit</button>
+                <button class="skip" onclick="skipStep(4)">Skip</button>
+            </div>
+        </div>
+        
+        <!-- Profile output section to display the summary of user inputs -->
+        <div id="profile-output" style="display:none;">
+            <h3>Profile Summary</h3>
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Live Well. All Rights Reserved.</p>
+        <p>Edited by: <a href="editor-page.html" target="_blank">Student 3</a></p>
+    </footer>
+    
+    <!-- Link to external JavaScript file -->
+    <script src="Userprofile.js"></script>
+</body>
+</html>

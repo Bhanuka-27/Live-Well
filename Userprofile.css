@@ -1,0 +1,88 @@
+body{
+    font-family: Arial, sans-serif; /* Use Arial or default sans-serif font */
+}
+
+/* Container for the profile setup form */
+#container{
+    width: 50%; /* Set width to 50% of the viewport */
+    margin: auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding inside the container */
+    border: 1px solid #ccc; /* Add a light gray border */
+    border-radius: 5px; /* Round the corners of the border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+/* Step sections for multi-step form */
+.step{
+    display: none; /* Hide all steps by default */
+}
+
+/* Active step section to be displayed */
+.step.active{
+    display: block; /* Show the currently active step */
+}
+
+/* Styling for each prompt item (input fields) */
+.prompt-item{
+    margin-bottom: 15px; /* Add space below each prompt item */
+}
+
+/* Progress bar container */
+#progress-bar{
+    width: 100%; /* Full width of the container */
+    background-color: #f3f3f3; /* Light gray background for the bar */
+    border-radius: 5px; /* Round the corners of the bar */
+    overflow: hidden; /* Hide overflow content (progress fill) */
+    margin-bottom: 20px; /* Space below the progress bar */
+}
+
+/* Progress fill within the progress bar */
+#progress{
+    height: 20px; /* Set height of the progress fill */
+    background-color: #4caf50; /* Green background for progress fill */
+    width: 0; /* Initial width (0% progress) */
+    border-radius: 5px; /* Round the corners of the fill */
+    text-align: center; /* Center text within the fill */
+    line-height: 20px; /* Vertically center the text */
+    color: white; /* White text color */
+}
+
+/* Profile output section styling */
+#profile-output{
+    margin-top: 20px; /* Space above the profile output */
+    padding: 10px; /* Padding inside the output section */
+    border: 1px solid #ccc; /* Light gray border around the output */
+    border-radius: 5px; /* Round the corners of the output border */
+    background-color: #57f791; /* Light green background for the output */
+}
+
+/* Button styling */
+button{
+    padding: 10px 20px; /* Padding inside buttons */
+    background-color: #28a745; /* Green background for buttons */
+    color: white; /* White text color for buttons */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Round the corners of the buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Hover effect for buttons */
+button:hover{
+    background-color: #218838; /* Darker green background on hover */
+}
+
+/* Styling for skip buttons */
+button.skip{
+    background-color: #ffc107; /* Yellow background for skip buttons */
+}
+
+/* Hover effect for skip buttons */
+button.skip:hover{
+    background-color: #e0a800; /* Darker yellow on hover */
+}
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5em;
+}

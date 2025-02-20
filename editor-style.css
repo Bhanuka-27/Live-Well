@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif; /* Set the font family for all text */
+    background-color:#15e342; /* Light pink background color */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding around the content */
+    text-align: center; /* Center-align text */
+}
+
+/* Styles for the heading with class 'edite' */
+.edite {
+    background-color: #ffe6cc; /* Light red background */
+}
+
+/* Styles for the main container holding the editor content */
+.editor-container {
+    background-color: #ecfff4; /* Light pink background */
+    padding: 20px; /* Padding inside the container */
+    border: 2px solid #d1d1d1; /* Gray border with 2px width */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 800px; /* Maximum width of the container */
+    margin: auto; /* Center align the container */
+}
+
+/* Styles for the editor details section */
+.editor-details {
+    margin-bottom: 20px; /* Space at the bottom of the details section */
+}
+
+/* Styles for paragraphs inside .editor-details */
+.editor-details p {
+    margin: 5px 0; /* Margin for paragraphs */
+}
+
+/* Styles for links */
+a {
+    color: #4c15e3; /* Purple color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold font for links */
+}
+
+/* Hover effect for links */
+a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Styles for tasks section */
+.task {
+    background-color:rgb(57, 172, 57); /* Light red background for tasks */
+    padding: 15px; /* Padding inside tasks */
+    margin: 10px 0; /* Margin above and below tasks */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+}
+
+/* Styles for headings inside .task */
+.task h2 {
+    margin-top: 0; /* No margin on top of task headings */
+}
+
+/* Styles for the bottom anchor */
+#bottom {
+    margin-top: 50px; /* Space at the top of the anchor */
+}
+
+

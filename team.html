@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Page</title>
+    <link rel="stylesheet" href="team.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- Website Logo -->
+            <img src="GoodHealth.png" alt="Website Logo">
+        </div>
+        <div class="topic">
+            <h1>Live Well</h1>
+        </div>
+        <nav>
+            <ul class="nav-bar">
+                <!-- Navigation links -->
+                <li class="nav-item"><a href="home.html">Home</a></li>
+                <li class="nav-item"><a href="Userprofile.html">User Profile</a></li>
+                <li class="nav-item active"><a href="team.html">About Us</a></li>
+                <li class="nav-item"><a href="shop.html">Shop</a></li>
+                <li class="nav-item"><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="team-container">
+        <h1>Student Details</h1>
+        <p>About Us - Hover over the images for details!</p>
+        <div class="team-member">
+            <div class="thumbnail" onmouseover="showDetails('member1')" onmouseout="hideDetails('member1')">
+                <img src="bhanuka.jpg" alt="Team member 1">
+                <div class="details" id="member1">
+                    <p><strong>Bhanuka Wijerathne</strong></p>
+                    <p>Role: Student 1</p>
+                    <p>ID Number:w2084773</p>
+                    <p>Designed and implemented pages: splash-screen | Shop </p>
+                </div>
+            </div>
+            <div class="thumbnail" onmouseover="showDetails('member2')" onmouseout="hideDetails('member2')">
+                <img src="chamath2.jpg" alt="Team member 2">
+                <div class="details" id="member2">
+                    <p><strong>Chamath Anupama Gunasekara</strong></p>
+                    <p>Role: Student 2</p>
+                    <p>ID Number:w2084772</p>
+                    <p>Designed and implemented pages: Home | feedback</p>
+                </div>
+            </div>
+            <div class="thumbnail" onmouseover="showDetails('member3')" onmouseout="hideDetails('member3')">
+                <img src="ridmiR.jpg" alt="Team member 3">
+                <div class="details" id="member3">
+                    <p><strong>Ridmi Poornima</strong></p>
+                    <p>Role: Student 3</p>
+                    <p>ID Number:w2084722</p>
+                    <p>Designed and implemented pages: User Profile | Team </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Live Well. All Rights Reserved.</p>
+        <p>Edited by: <a href="editor-page.html" target="_blank">Student 3</a></p>
+    </footer>
+
+     <!-- Script for team member details -->
+    <script src="team.js"></script>
+</body>
+</html>
